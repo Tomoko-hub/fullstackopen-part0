@@ -8,12 +8,14 @@ const Part = () => {
   )
 }
 
-const Content = () => {
+const Content = (props) => {
   return(
     <div>
-      <Part />
-      <Part />
-      <Part />
+      <Part value={props.course} />
+      <Part value1={props.first}
+            value2={props.second}
+            value3={props.third} />
+      <Part talue={props.total} />
     </div>
   )
 }
@@ -29,6 +31,7 @@ const App = () => {
   const part3 = 'State of a component'
   const exercises3 = 14
   const third = part3 + exercises3
+  const total ='Number of excercises' + exercises1 + exercises2 + exercises3
 
   return (
     <div>
@@ -42,7 +45,7 @@ const App = () => {
       <p>
         {third}
       </p>
-      <p>Number of exercises {exercises1 + exercises2 + exercises3}</p>
+      <p>{total}</p>
       <Content />
     </div>
   )
