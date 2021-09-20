@@ -31,7 +31,7 @@ const App = () => {
   const part3 = 'State of a component'
   const exercises3 = 14
   const third = part3 + exercises3
-  const total ='Number of excercises' + exercises1 + exercises2 + exercises3
+  const total = exercises1 + exercises2 + exercises3
 
   return (
     <div>
@@ -45,7 +45,7 @@ const App = () => {
       <p>
         {third}
       </p>
-      <p>{total}</p>
+      <p>Number of excercises {total}</p>
       <Content />
     </div>
   )
